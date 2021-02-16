@@ -260,7 +260,9 @@ keyword1 -- keyword2 -- keyword3
 %  \end{eqnarray}
 %%-------------------------------------------------------------------------------
  with the ideal gas equation of state closing the system.
- Most variables take their usual meanings.
+ Most variables take their usual meanings, with ${\mathbfss W}$ being the 
+ first order traceless rate of strain tensor and $\left|{\mathbfss W}\right|^{2}$ its
+ inner product with itself.
  \fg{Lars, please check the numbers are correct}
  Terms containing $\zeta_D{=2.5},\,\zeta_\nu{=6.5}$ and $\zeta{_\chi=2.5}$
  are applied to resolve shock discontinuities with artificial diffusion of
@@ -269,10 +271,11 @@ keyword1 -- keyword2 -- keyword3
  Equations~\eqref{eq:mom} and \eqref{eq:ent} include terms with $\zeta_D$
  to provide momentum and energy conserving corrections for the
  artificial mass diffusion applying in Equation~\eqref{eq:mass}.
- Terms containing $\nu_3,\,\chi_3$ and $\eta_3$ apply sixth-order hyperdiffusion
+ Terms containing $\nu_3,\,\chi_3$ and $\eta_3$ apply sixth-order hyperdiffusion,
+ in which ${\mathbfss W}^{(3)}$ is the fifth order rate of strain tensor, 
  to resolve grid-scale instabilities \citep[see, e.g.,][]{ABGS02,HB04,GMKS21},
  with mesh Reynolds number set to be $\simeq1$ for each $\dx$.
- The incidence of SN denoted by $\dot\sigma$ is once at $t=0$.
+ The incidence of SN denoted by $\dot\sigma$ occurs once at $t=0$.
 
 
  \begin{table}
